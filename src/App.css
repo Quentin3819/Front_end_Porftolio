@@ -1,6 +1,4 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700&display=swap');
 
 .App-logo {
   height: 40vmin;
@@ -35,4 +33,71 @@
   to {
     transform: rotate(360deg);
   }
+}
+body, *{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  color: white
+}
+
+html{
+  background-image: url("./assets/images/fa4b384047a85fcccd0e42c2195f88e2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+body{
+
+  max-width: 1400px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.contents{
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+strong{
+  color: #3589DD;
+}
+
+h1{
+  font-size: 40px;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+.header img{
+  width: 70px;
+  height: auto;
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar p:not(:last-child) {
+  display: flex;
+  margin-right: 30px;
+}
+
+.infoPage{
+  padding-top: 70px;
+}
+
+.infoPage div > h1:nth-child(2){
+  text-transform: uppercase;
+}
+
+.project img{
+  width: 250px;
+  height: auto;
+  object-fit: cover;
 }
