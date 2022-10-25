@@ -17,8 +17,11 @@ export class BlocIcone extends React.Component {
                     <>
                         {this.props.content.map((bloc_logo_content) => (
                             <div key={bloc_logo_content.id} className="blocIcone">
-                                <div dangerouslySetInnerHTML={{__html: bloc_logo_content.titre}}/>
-                                <div dangerouslySetInnerHTML={{__html: bloc_logo_content.description}}/>
+                                <div className="iconeTitre">
+                                    <div dangerouslySetInnerHTML={{__html: bloc_logo_content.titre}}/>
+                                    <div dangerouslySetInnerHTML={{__html: bloc_logo_content.description}}/>
+                                </div>
+
                                 <div className="icone">
                                     {bloc_logo_content.icone_id.map((icone) => (
                                         <div key={icone.id}>

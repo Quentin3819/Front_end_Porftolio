@@ -33,10 +33,9 @@ export class Contents extends React.Component {
     }
 
 
-
     render() {
         return (
-            <div className="contents">
+            <div className={"contents " + this.state.fetchApiData.titre}>
                 {(this.state.fetchApiData.sous_titre?.length > 0) &&
                     <InfoPage content={this.state.fetchApiData}/>
                 }

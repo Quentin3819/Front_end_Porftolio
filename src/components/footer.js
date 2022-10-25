@@ -11,16 +11,20 @@ export class Footer extends React.Component {
 
     render() {
         return (
-            <div className="footer">
-                <div dangerouslySetInnerHTML={{__html: this.props.content[0].description}}/>
-                {this.props.content[0].icone_id.map((icone) => (
-                        <a href={icone.lien} key={icone.id}>
-                            <DynamicIcon icon={icone.image}/>
-                        </a>
+            <div className="footer" >
+                <div className="footerContent">
+                    <p>{this.props.content[0].text}</p>
+                    <p>{this.props.content[0].copyright}</p>
+                    <div className="footerIcone">
+                        {this.props.content[0].icone_id.map((icone) => (
+                            <a href={icone.lien} key={icone.id}>
+                                <DynamicIcon icon={icone.image}/>
+                            </a>
+                        ))}
+                    </div>
+                </div>
 
-                ))}
             </div>
-
         )
     }
 }

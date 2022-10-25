@@ -43,17 +43,20 @@ export class Main extends React.Component {
         return (
             <div className="main">
                 <div className="header">
-                    <a href="/">
-                        <img src={logo}/>
-                    </a>
-                    <div className="navbar">
-                        {this.state.fetchApiData.map((page) => (
-                            <p id={page.id} key={page.id} onClick={this.changeContent}>{page.titre}</p>
-                        ))}
+                    <div className="headerContent">
+                        <a href="/">
+                            <img src={logo}/>
+                        </a>
+                        <div className="navbar">
+                            {this.state.fetchApiData.map((page) => (
+                                <p id={page.id} key={page.id} onClick={this.changeContent}>{page.titre}</p>
+                            ))}
+                        </div>
                     </div>
+
                 </div>
 
-                <Contents pageid={this.state.pageId}  className="contents"/>
+                <Contents pageid={this.state.pageId}/>
 
                 {(this.state.fetchFooter?.length > 0) &&
                     <Footer content={this.state.fetchFooter}/>
