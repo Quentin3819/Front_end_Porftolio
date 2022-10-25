@@ -354,12 +354,23 @@ strong {
 
 .footerContent {
     display: flex;
-    justify-content: space-between;
     padding: 20px;
     max-width: 1600px;
     margin-right: auto;
     margin-left: auto;
     width: 100%;
+}
+
+.footerContent > p , .footerContent > div{
+    width: 33%;
+}
+
+.footerContent > p:nth-child(2){
+    text-align: center;
+}
+
+.footerContent > div{
+    text-align: end;
 }
 
 .footer > p, footer > div {
