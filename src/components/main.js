@@ -48,6 +48,7 @@ export class Main extends React.Component {
         let id = e.currentTarget.id
         this.setState({pageId: id})
         this.forceUpdate()
+        this.closeMenu()
     }
 
     openMenu (){
@@ -76,7 +77,7 @@ export class Main extends React.Component {
                                 {this.state.fetchApiData.map((page) => (
                                     <div key={page.id} className="navbarItem">
                                         <DynamicIcon icon={page.iconePage}/>
-                                        <p id={page.id}  onClick={this.changeContent}>{page.titre}</p>
+                                        <p id={page.id} onClick={this.changeContent}>{page.titre}</p>
                                     </div>
                                 ))}
                         </div>

@@ -144,7 +144,6 @@ strong {
 
 .navbar .navbarItem:not(:last-child) {
     margin-right: 30px;
-    transition: all ease-out 0.5s;
 }
 
 .infoPage > div {
@@ -566,14 +565,17 @@ strong {
         display: initial;
     }
 
-    .headerContent.open .navbarItem{
-        display: flex;
+    .headerContent.open .navbar{
+        height: auto;
+        padding-top: 50px;
+        transition: all ease-out 0.5s;
     }
 
-    .headerContent.open .navbar{
-        display: flex;
+    .navbar {
+        height: 0;
+        overflow: hidden;
         flex-direction: column;
-        padding-top: 50px;
+        transition: all ease-out 0.5s;
     }
 
     .headerContent.open .navbarItem:not(:last-child){
@@ -581,9 +583,6 @@ strong {
         margin-right: 0;
     }
 
-    .navbar .navbarItem {
-        display: none
-    }
 
     .contents:not(.Accueil) .blocIcone .icone svg{
         font-size: 75px;
