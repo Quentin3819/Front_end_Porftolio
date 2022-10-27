@@ -9,7 +9,7 @@ export class InfoPage extends React.Component {
                 <div>
                     <div dangerouslySetInnerHTML={{__html: this.props.content.sous_titre}}/>
                     {(this.props.content.animateText !== undefined || this.props.content.animateText?.length > 0 )&&
-                        <p className="animateText">Développeur&nbsp;<AnimateString content={this.props.content.animateText}/></p>
+                        <div className="animateText">Développeur&nbsp;<AnimateString content={this.props.content.animateText}/></div>
                     }
                 </div>
 
