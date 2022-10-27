@@ -93,6 +93,8 @@ strong {
 .header {
     background-color: #00000052;
     padding: 20px;
+    position: fixed;
+    width: 100%;
 }
 
 .headerContent {
@@ -104,7 +106,7 @@ strong {
 }
 
 .header img {
-    width: 50px;
+    width: 35px;
     height: auto;
 }
 
@@ -123,29 +125,8 @@ strong {
     transition: all ease-out 0.5s;
 }
 
-.Accueil .infoPage {
-    padding-top: 170px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.Accueil .infoPage img {
-    margin-right: 10px;
-    width: 500px;
-}
-
-.Accueil .infoPage > div {
-    align-self: baseline;
-}
-
-.Accueil .infoPage div > h1 {
-    text-transform: uppercase;
-    padding-bottom: 20px;
-    padding-top: 20px;
-}
-
 .infoPage > div {
-    padding-top: 100px;
+    padding-top: 170px;
     text-align: center;
 }
 
@@ -163,6 +144,31 @@ strong {
 .infoPage .Typewriter span{
     color: #3589DD;
     font-size: 34px;
+}
+
+
+.Accueil .infoPage {
+    padding-top: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Accueil .infoPage img {
+    margin-right: 10px;
+    width: 500px;
+}
+
+.Accueil .infoPage > div {
+    align-self: baseline;
+    padding-top: 100px;
+    text-align: start;
+    padding-left: 30px;
+}
+
+.Accueil .infoPage div > h1 {
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    padding-top: 25px;
 }
 
 .blocText {
@@ -342,7 +348,7 @@ strong {
 }
 
 .CV .infoPage > div{
-    padding-top: 70px;
+    padding-top: 170px;
     padding-bottom: 70px;
 }
 
