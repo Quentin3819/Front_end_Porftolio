@@ -80,10 +80,11 @@ body {
 }
 
 .contents {
-    width: 1400px;
+    max-width: 1400px;
     margin-right: auto;
     margin-left: auto;
     min-height: 88.5vh;
+    padding: 0 30px;
 }
 
 strong {
@@ -95,6 +96,7 @@ strong {
     padding: 20px;
     position: fixed;
     width: 100%;
+    box-sizing: border-box;
 }
 
 .headerContent {
@@ -376,11 +378,11 @@ strong {
     max-width: 1600px;
     margin-right: auto;
     margin-left: auto;
-    width: 100%;
 }
 
 .footerContent > p , .footerContent > div{
     width: 33%;
+    align-self: center;
 }
 
 .footerContent > p:nth-child(2){
@@ -423,4 +425,152 @@ strong {
 
 .navbar p:hover{
     color: #3589DD;
+}
+
+@media all and (max-width: 1200px) {
+    h1, h2{
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .contents{
+        padding: 0 50px;
+    }
+
+    .infoPage .animateText{
+        font-size: 30px;
+    }
+
+    .Accueil .infoPage img{
+        width: 400px;
+        object-fit: contain;
+    }
+
+    .contents:not(.Accueil) .blocIcone .icone{
+        width: 100%;
+    }
+
+}
+
+@media all and (max-width: 991px) {
+    html{
+        background-attachment: fixed;
+    }
+    .contents{
+        padding: 0 50px;
+    }
+
+    .Accueil .infoPage > div{
+        align-self: initial;
+    }
+
+    .Accueil .infoPage div > h1{
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+
+    .infoPage .animateText{
+        padding-top: 0;
+    }
+
+    .Accueil .infoPage, .blocText > div, .footerContent{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Accueil .infoPage img{
+        padding-top: 75px;
+    }
+
+    .infoPage .animateText, .infoPage .Typewriter span{
+        font-size: 25px;
+    }
+
+    .blocText{
+        padding-top: 250px;
+    }
+
+    .blocText_titre{
+        width: 80%;
+    }
+
+    .blocText_img img{
+        padding-top: 75px;
+    }
+
+    .blocIcones {
+        padding-top: 50px;
+    }
+
+    .project{
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .project > div{
+        width: 80%;
+        margin-right: 0;
+        box-sizing: border-box;
+    }
+
+    .project .projectDescription{
+        min-height: 150px;
+    }
+
+    .footerContent > div, .footerContent p{
+        text-align: center;
+        padding: 10px;
+    }
+
+    .footer .footerIcone > a:not(:last-child){
+        margin-right: 30px;
+    }
+
+    .footerContent > p, .footerContent > div{
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 765px){
+    .contents:not(.Accueil) .blocIcone .icone svg{
+        font-size: 75px;
+    }
+
+    .Accueil .infoPage{
+        align-items: start;
+    }
+}
+
+@media all and (max-width: 574px) {
+    h1, h2{
+        font-size: 30px;
+    }
+
+    .infoPage .animateText, .infoPage .Typewriter span{
+        font-size: 25px;
+    }
+
+    .contents{
+        padding: 0 20px;
+    }
+
+    .Accueil .infoPage img{
+        width: 300px;
+    }
+
+    .blocText_img img{
+        width: 300px;
+    }
+
+    .blocText_titre{
+        width: 95%;
+    }
+
+    .contents:not(.Accueil) .blocIcone .icone svg{
+        font-size: 60px;
+    }
+
+    .project > div{
+        width: 90%;
+    }
 }
