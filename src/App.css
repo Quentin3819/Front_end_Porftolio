@@ -145,13 +145,25 @@ strong {
 }
 
 .infoPage > div {
-    padding-top: 170px;
+    padding-top: 100px;
     text-align: center;
 }
 
 .infoPage h1 {
     margin-bottom: 10px;
 }
+
+.infoPage .Typewriter{
+    padding-top: 30px;
+    text-align: start;
+    font-size: 38px;
+}
+
+.infoPage .Typewriter span{
+    color: #3589DD;
+}
+
+
 
 .blocText {
     padding-top: 150px;
