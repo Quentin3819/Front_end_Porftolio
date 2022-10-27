@@ -153,17 +153,17 @@ strong {
     margin-bottom: 10px;
 }
 
-.infoPage .Typewriter{
+.infoPage .animateText{
     padding-top: 30px;
     text-align: start;
-    font-size: 38px;
+    font-size: 34px;
+    display: flex;
 }
 
 .infoPage .Typewriter span{
     color: #3589DD;
+    font-size: 34px;
 }
-
-
 
 .blocText {
     padding-top: 150px;
