@@ -44,7 +44,7 @@ body, * {
 }
 
 h1, h2 {
-    font-size: 35px;
+    font-size: 40px;
 }
 
 p, div, h3, li {
@@ -135,7 +135,7 @@ strong {
 }
 
 .Accueil .infoPage > div {
-    align-self: center;
+    align-self: baseline;
 }
 
 .Accueil .infoPage div > h1 {
