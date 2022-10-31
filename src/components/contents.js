@@ -3,7 +3,6 @@ import {BlocIcone} from "./bloc_icone";
 import {BlocText} from "./bloc_text";
 import {InfoPage} from "./info_page";
 import {Projects} from "./projects";
-import GitHubCalendar from "react-github-calendar";
 import {Github} from "./github";
 import {MetaHead} from "./meta_head";
 
