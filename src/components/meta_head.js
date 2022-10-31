@@ -10,7 +10,6 @@ export class MetaHead extends React.Component {
                     <title>{this.props.content.titre}</title>
                     lang="fr”
                 </Helmet>
-                {console.log(this.props.content.titre)}
             </div>
         )
     }
