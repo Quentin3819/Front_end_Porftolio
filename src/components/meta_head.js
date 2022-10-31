@@ -1,15 +1,17 @@
 import React from "react";
-import {Helmet} from "react-helmet";
+import {Helmet, HelmetProvider} from "react-helmet-async";
 
 export class MetaHead extends React.Component {
 
     render() {
+        const helmetContext = {};
         return (
             <div className="meta_head">
-                <Helmet>
-                    <title>{this.props.content.titre}</title>
-                    lang="fr”
-                </Helmet>
+                <HelmetProvider context={helmetContext}>
+                    <Helmet>
+                        <title>{this.props.content.titre}</title>
+                    </Helmet>
+                </HelmetProvider>
             </div>
         )
     }
