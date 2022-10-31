@@ -5,6 +5,7 @@ import {InfoPage} from "./info_page";
 import {Projects} from "./projects";
 import GitHubCalendar from "react-github-calendar";
 import {Github} from "./github";
+import {MetaHead} from "./meta_head";
 
 export class Contents extends React.Component {
     icone;
@@ -36,6 +37,7 @@ export class Contents extends React.Component {
     render() {
         return (
             <div className={"contents " + this.state.fetchApiData.titre}>
+                <MetaHead content={this.state.fetchApiData} />
                 {(this.state.fetchApiData.sous_titre?.length > 0) &&
                     <InfoPage content={this.state.fetchApiData}/>
                 }
