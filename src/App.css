@@ -420,6 +420,11 @@ strong {
     margin-right: 20px;
 }
 
+.navbar p, .project > div{
+    transition: all ease-out 0.2s;
+}
+
+
 /** ANIME CSS **/
 
 .blocIcone .icone a:hover, .contents:not(.Accueil) .blocIcone .icone > div:hover{
