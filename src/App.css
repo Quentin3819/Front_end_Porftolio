@@ -299,10 +299,10 @@ strong {
 }
 
 .contents:not(.Accueil) .blocIcone .icone > div {
+    width: auto;
     border: 1px #3589DD solid;
     border-radius: 7px;
     padding: 15px 25px;
-    width: 13%;
     text-align: center;
     margin-right: 20px;
     margin-bottom: 20px;
