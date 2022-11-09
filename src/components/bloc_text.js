@@ -15,7 +15,7 @@ export class BlocText extends React.Component {
                                 </div>
                                 {(bloc_text_content.image !== undefined || bloc_text_content.image?.length > 0) &&
                                     <div className="blocText_img">
-                                        <img src={"http://localhost:8000/upload/images/blocTexte/" + bloc_text_content.image}/>
+                                        <img src={"https://backoffice.nitweb.fr/upload/images/blocTexte/" + bloc_text_content.image}/>
                                     </div>
                                 }
                             </div>

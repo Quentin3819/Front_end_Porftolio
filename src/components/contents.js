@@ -17,7 +17,7 @@ export class Contents extends React.Component {
     }
 
     componentDidMount() {
-        fetch("http://localhost:8000/api/pages/" + this.props.pageid)
+        fetch("https://backoffice.nitweb.fr/api/pages/" + this.props.pageid)
             .then((respo) => {
                 return respo.json();
             })

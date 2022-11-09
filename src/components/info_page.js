@@ -14,7 +14,7 @@ export class InfoPage extends React.Component {
                 </div>
 
                 {(this.props.content.image !== undefined || this.props.content.image?.length > 0) &&
-                    <img src={"http://localhost:8000/upload/images/page/" + this.props.content.image}/>
+                    <img src={"https://backoffice.nitweb.fr/upload/images/page/" + this.props.content.image}/>
                 }
             </div>
         )

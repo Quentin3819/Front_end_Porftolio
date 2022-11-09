@@ -7,12 +7,12 @@ export class Projects extends React.Component {
             <div className="project">
                 {this.props.content.map((project) => (
                     <div key={project.id}>
-                        <img key={project.id} src={"http://localhost:8000/upload/images/projet/" + project.image}/>
+                        <img key={project.id} src={"https://backoffice.nitweb.fr/upload/images/projet/" + project.image}/>
                         <div className="projectTitle" dangerouslySetInnerHTML={{__html: project.titre}}/>
                         <div className="projectDescription" dangerouslySetInnerHTML={{__html: project.description}}/>
                         <div className="projectInfo">
-                            <p className="projectDate" >{format(new Date(project.date_creation), 'd/MM/y')}</p>
-                            <a href={project.lien}>Demo</a>
+                            <p className="projectDate" >{format(new Date(project.date_creation), 'MMM/y')}</p>
+                            <a href={project.lien} target="_blank">Demo</a>
                         </div>
                     </div>
                 ))}

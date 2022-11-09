@@ -28,14 +28,14 @@ export class Main extends React.Component {
     }
 
     componentDidMount() {
-        fetch("http://localhost:8000/api/pages")
+        fetch("https://backoffice.nitweb.fr/api/pages")
             .then((respo) => {
                 return respo.json();
             })
             .then((data) => {
                 this.setState({fetchApiData: data['hydra:member']});
             });
-        fetch("http://localhost:8000/api/footers")
+        fetch("https://backoffice.nitweb.fr/api/footers")
             .then((respo) => {
                 return respo.json();
             })
