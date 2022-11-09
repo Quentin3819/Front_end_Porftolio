@@ -558,7 +558,7 @@ strong {
 
 @media all and (max-width: 765px){
     .header{
-        padding: 25px;
+        padding: 10px 25px;
     }
     .headerContent .burger, .headerContent .navbarButton{
         display: initial;
