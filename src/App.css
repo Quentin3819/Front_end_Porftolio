@@ -97,6 +97,7 @@ strong {
     position: fixed;
     width: 100%;
     box-sizing: border-box;
+    z-index: 3;
 }
 
 .headerContent {
@@ -181,7 +182,7 @@ strong {
 
 .Accueil .infoPage > div {
     align-self: baseline;
-    padding-top: 100px;
+    padding-top: 0;
     text-align: start;
     padding-left: 30px;
 }
@@ -428,16 +429,16 @@ strong {
 /** ANIME CSS **/
 
 .blocIcone .icone a:hover, .contents:not(.Accueil) .blocIcone .icone > div:hover{
-    -webkit-box-shadow:0px 0px 10px 7px rgba(53,137,221,1);
-    -moz-box-shadow: 0px 0px 10px 7px rgba(53,137,221,1);
-    box-shadow: 0px 0px 10px 7px rgba(53,137,221,1);
+    -webkit-box-shadow:0 0 10px 7px rgba(53,137,221,1);
+    -moz-box-shadow: 0 0 10px 7px rgba(53,137,221,1);
+    box-shadow: 0 0 10px 7px rgba(53,137,221,1);
     transform: scale(1.1);
 }
 
 .project > div:hover{
-    -webkit-box-shadow:0px 0px 10px 7px rgba(53,137,221,1);
-    -moz-box-shadow: 0px 0px 10px 7px rgba(53,137,221,1);
-    box-shadow: 0px 0px 10px 7px rgba(53,137,221,1);
+    -webkit-box-shadow:0 0 10px 7px rgba(53,137,221,1);
+    -moz-box-shadow: 0 0 10px 7px rgba(53,137,221,1);
+    box-shadow: 0 0 10px 7px rgba(53,137,221,1);
     transform: scale(1.05);
 }
 
@@ -511,7 +512,7 @@ strong {
     }
 
     .blocText{
-        padding-top: 250px;
+        padding-top: 175px;
     }
 
     .blocText_titre{
