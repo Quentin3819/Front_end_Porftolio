@@ -11,6 +11,7 @@ export class Contents extends React.Component {
 
     constructor(props) {
         super();
+        this.props = props;
         this.state = {
             fetchApiData: [],
         };
@@ -32,10 +33,18 @@ export class Contents extends React.Component {
         }
     }
 
+    scrollToTop () {
+        window.scrollTo({
+            top: 0,
+            behavior: 'auto'
+        });
+    };
+
 
     render() {
         return (
             <div className={"contents " + this.state.fetchApiData.titre}>
+                {this.scrollToTop()}
                 <MetaHead content={this.state.fetchApiData} />
                 {(this.state.fetchApiData.sous_titre?.length > 0) &&
                     <InfoPage content={this.state.fetchApiData}/>
