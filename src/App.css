@@ -187,7 +187,7 @@ strong {
 }
 
 .Accueil .infoPage > div {
-    align-self: baseline;
+    align-self: center;
     padding-top: 0;
     text-align: start;
     padding-left: 30px;
