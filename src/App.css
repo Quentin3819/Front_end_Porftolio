@@ -92,12 +92,15 @@ strong {
 }
 
 .header {
-    background-color: #000000a8;
-    padding: 20px;
+    background-color: black;
     position: fixed;
     width: 100%;
     box-sizing: border-box;
     z-index: 3;
+}
+
+.header a {
+    height: max-content;
 }
 
 .headerContent {
@@ -106,6 +109,8 @@ strong {
     max-width: 1600px;
     margin-right: auto;
     margin-left: auto;
+    background-color: black;
+    padding: 20px;
 }
 
 .header img {
@@ -161,6 +166,7 @@ strong {
     text-align: start;
     font-size: 34px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .infoPage .Typewriter span{
@@ -312,6 +318,29 @@ strong {
 .contents:not(.Accueil) .blocIcone .icone svg {
     font-size: 90px;
 }
+
+.icone .iconeName{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.56);
+    display: none;
+    justify-content: center;
+    align-items: end;
+    border-radius: 7px;
+}
+
+.icone .iconeName p{
+    position: absolute;
+    bottom: 5px;
+}
+
+.icone > div:hover .iconeName{
+    display: flex;
+}
+
 
 .githubTitre {
     text-align: center;
@@ -557,7 +586,7 @@ strong {
 }
 
 @media all and (max-width: 765px){
-    .header{
+    .headerContent{
         padding: 10px 25px;
     }
     .headerContent .burger, .headerContent .navbarButton{
@@ -572,19 +601,23 @@ strong {
     }
 
     .headerContent.open .navbar{
-        height: auto;
-        padding-top: 50px;
-        transition: all ease-out 0.5s;
+        top: 60px;
+        padding-bottom: 20px;
     }
 
     .navbar {
-        height: 0;
-        overflow: hidden;
+        padding-top: 20px;
         flex-direction: column;
+        background-color: black;
+        position: absolute;
+        width: 100%;
+        top: -150px;
+        left: 0;
+        z-index: -2;
         transition: all ease-out 0.5s;
     }
 
-    .headerContent.open .navbarItem:not(:last-child){
+    .headerContent .navbarItem:not(:last-child){
         margin-bottom: 15px;
         margin-right: 0;
     }

@@ -29,7 +29,13 @@ export class BlocIcone extends React.Component {
                                                 <a href={icone.lien}>
                                                     <DynamicIcon icon={icone.image}/>
                                                 </a> :
-                                                <DynamicIcon icon={icone.image}/>
+                                                <>
+                                                    <div className="iconeName">
+                                                        <p>{icone.nom}</p>
+                                                    </div>
+                                                    <DynamicIcon icon={icone.image}/>
+                                                </>
+
                                             }
                                         </div>
                                     ))}
