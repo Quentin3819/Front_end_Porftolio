@@ -265,6 +265,13 @@ strong {
     text-align: center;
 }
 
+.iconeTitre h2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
 .iconeTitre > div:nth-child(1) {
     margin-bottom: 10px;
 }
